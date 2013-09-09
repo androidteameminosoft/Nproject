@@ -1,0 +1,186 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NTVMainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/header"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <View
+        android:id="@+id/border"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:orientation="vertical" >
+    </View>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flash News" />
+
+        <TextView
+            android:id="@+id/textLatesNews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/butHome"
+                android:layout_width="@dimen/buttonwidth"
+                android:layout_height="fill_parent"
+                android:background="@drawable/button_background_sel"
+                android:text="Home"
+                android:textColor="@color/White"
+                android:textStyle="bold|normal" />
+
+            <Button
+                android:id="@+id/butState"
+                android:layout_width="@dimen/buttonwidth"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/button_back_normal"
+                android:text="State"
+                android:textColor="@color/White"
+                android:textStyle="bold|normal" />
+
+            <Button
+                android:id="@+id/butNational"
+                android:layout_width="@dimen/buttonwidth"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/button_back_normal"
+                android:text="National"
+                android:textColor="@color/White"
+                android:textStyle="bold|normal" />
+
+            <Button
+                android:id="@+id/butInternational"
+                android:layout_width="@dimen/buttonwidth"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/button_back_normal"
+                android:text="International"
+                android:textColor="@color/White"
+                android:textStyle="bold|normal" />
+
+            <Button
+                android:id="@+id/butSports"
+                android:layout_width="@dimen/buttonwidth"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/button_back_normal"
+                android:text="Sports"
+                android:textColor="@color/White"
+                android:textStyle="bold|normal" />
+
+            <Button
+                android:id="@+id/butBussioness"
+                android:layout_width="@dimen/buttonwidth"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/button_back_normal"
+                android:text="Bussiness"
+                android:textColor="@color/White"
+                android:textStyle="bold|normal" />
+
+            <Button
+                android:id="@+id/butMovies"
+                android:layout_width="@dimen/buttonwidth"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/button_back_normal"
+                android:text="Movies"
+                android:textColor="@color/White"
+                android:textStyle="bold|normal" />
+
+            <Button
+                android:id="@+id/butLiveTv"
+                android:layout_width="@dimen/buttonwidth"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/button_back_normal"
+                android:text="LiveTv"
+                android:textColor="@color/White"
+                android:textStyle="bold|normal" />
+
+            <Button
+                android:id="@+id/butYoutube"
+                android:layout_width="@dimen/buttonwidth"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/button_back_normal"
+                android:text="Videos"
+                android:textColor="@color/White"
+                android:textStyle="bold|normal" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/fragEntireContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/fragBrakingNews"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fragRecentVideos"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fragchanels"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

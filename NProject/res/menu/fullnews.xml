@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/action_share"
+        android:icon="@drawable/abc_ic_menu_share_holo_dark"
+        android:showAsAction="ifRoom"
+        android:title="share"
+        yourapp:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/facebook"
+                android:title="Facebook"/>
+            <item
+                android:id="@+id/email"
+                android:title="Email"/>
+        </menu>
+    </item>
+
+</menu>
